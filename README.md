@@ -64,5 +64,33 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ACT-ion is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+ACT-ion Battery Technologies, Inc. is an advanced battery materials company founded in Dallas, Texas
+and spun out of Hunt Energy Enterprises, now operating an advanced cathode pilot plant at 1200 Tappan
+Circle, Carrollton, Texas. ACT-ion manufactures surface-engineered single-crystal cathode active
+materials (CAM) for lithium-ion batteries across LFP, LMFP, NMC and lithium-manganese-rich (LMR)
+chemistries — marketed as ACT-ion LXP+ — using a chemistry-agnostic high-throughput continuous
+synthesis process that deposits a multi-functional protective and conductive shell during particle
+growth.
+
+## No API surface
+
+ACT-ion is a materials manufacturer, not a software vendor. As of 2026-09-06 it publishes no API,
+developer portal, SDK, or machine-readable contract. Probes of `https://www.act-ion.com` for
+`/openapi.json`, `/swagger.json`, `/llms.txt`, `/apis.json`, `/apis.yml` and every named
+`/.well-known/` discovery path returned HTTP 404, and `api.`, `docs.`, `developer.`, `app.` and
+`portal.act-ion.com` do not resolve in DNS. See `x-coverage` in `apis.yml` for the recorded evidence.
+
+## Links
+
+- Website: https://www.act-ion.com/
+- About: https://www.act-ion.com/about
+- Technology: https://www.act-ion.com/technology
+- News: https://www.act-ion.com/news
+- Careers: https://www.act-ion.com/careers
+- Contact: inquiry@act-ion.com
+
+## Artifacts
+
+- `well-known/act-ion-well-known.yml` — discovery-path probe (recorded absence, no pointer emitted)
+- `security/act-ion-domain-security.yml` — TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe
+- `llms/act-ion-llms.txt` — generated llms.txt (by API Evangelist, not published by ACT-ion)

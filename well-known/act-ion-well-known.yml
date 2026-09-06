@@ -1,0 +1,85 @@
+generated: '2026-09-06'
+method: probed
+source: https://www.act-ion.com/
+note: >-
+  Every named /.well-known/ path was probed on both hosts the record knows (act-ion.com and
+  www.act-ion.com — the apex 301s to www). ACT-ion serves no discovery document at any of them.
+  act-ion.com is a Squarespace site: /.well-known/security.txt returns Squarespace's own JSON
+  404 body ({"message":"security.txt not found"}) and every other path returns the Squarespace
+  HTML 404 page with an HTTP 404 status, so there is no soft-200 catch-all here. The path-echo
+  negative control also returned 404, confirming the host does not manufacture documents from
+  the requested path. NO WellKnown and NO SecurityTxt pointer is emitted: this file records a
+  measured absence, not a served surface. There is no API host, docs host, console host or
+  OpenAPI servers[] host to add — api., docs., developer., app. and portal..act-ion.com do not
+  resolve in DNS.
+hit_count: 0
+path_echo_control: passed
+hosts:
+- host: https://www.act-ion.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/act-ion-negative-control-7f3ab91c.json
+    status: 404
+    file: null
+    note: negative control — a path that cannot exist; a 2xx here would discard every hit on this host
+- host: https://act-ion.com
+  note: apex 301-redirects to https://www.act-ion.com/ — probes resolve to the www host above
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+x-evidence:
+  checked: '2026-09-06'
+  dns:
+  - {host: api.act-ion.com, resolves: false}
+  - {host: docs.act-ion.com, resolves: false}
+  - {host: developer.act-ion.com, resolves: false}
+  - {host: app.act-ion.com, resolves: false}
+  - {host: portal.act-ion.com, resolves: false}
