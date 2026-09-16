@@ -1,0 +1,21 @@
+{
+  "repo": "act-ion",
+  "feeds": [
+    {
+      "source": "https://www.act-ion.com/news",
+      "feed_url": "https://www.act-ion.com/news",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.act-ion.com/technology",
+      "feed_url": "https://www.act-ion.com/technology",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-13T13:00:00Z"
+}
