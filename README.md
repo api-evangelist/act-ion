@@ -64,33 +64,80 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ACT-ion Battery Technologies, Inc. is an advanced battery materials company founded in Dallas, Texas
-and spun out of Hunt Energy Enterprises, now operating an advanced cathode pilot plant at 1200 Tappan
-Circle, Carrollton, Texas. ACT-ion manufactures surface-engineered single-crystal cathode active
-materials (CAM) for lithium-ion batteries across LFP, LMFP, NMC and lithium-manganese-rich (LMR)
-chemistries — marketed as ACT-ion LXP+ — using a chemistry-agnostic high-throughput continuous
-synthesis process that deposits a multi-functional protective and conductive shell during particle
-growth.
+ACT-ion Battery Technologies, Inc. is an advanced battery materials company founded in Dallas, Texas and spun out of Hunt Energy Enterprises, now running an advanced cathode pilot plant in Carrollton, Texas. It manufactures surface-engineered single-crystal cathode active materials (CAM) for lithium-ion batteries across LFP, LMFP, NMC and lithium-manganese-rich chemistries, marketed as ACT-ion LXP+, using a chemistry-agnostic high-throughput continuous synthesis process that deposits a protective, conductive shell during particle growth to cut CAM cost and plant footprint. It raised a $7.5M pre-Series A led by BASF Venture Capital, extended to $11.5M, won a 2024 R&D 100 Award, and named Mark McGough CEO in August 2026. ACT-ion is a materials manufacturer, not a software vendor: it publishes no API, developer portal, SDK or machine-readable contract.
 
-## No API surface
+**Areas:** Company · Energy · Battery Materials · Cathode Active Materials · Lithium-Ion Batteries · Energy Storage · Advanced Manufacturing · Clean Energy · Electric Vehicles · Materials Science · Deep Tech · Texas
 
-ACT-ion is a materials manufacturer, not a software vendor. As of 2026-09-06 it publishes no API,
-developer portal, SDK, or machine-readable contract. Probes of `https://www.act-ion.com` for
-`/openapi.json`, `/swagger.json`, `/llms.txt`, `/apis.json`, `/apis.yml` and every named
-`/.well-known/` discovery path returned HTTP 404, and `api.`, `docs.`, `developer.`, `app.` and
-`portal.act-ion.com` do not resolve in DNS. See `x-coverage` in `apis.yml` for the recorded evidence.
+## ACT-ion on APIs.io
 
-## Links
+Everything profiled for ACT-ion is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/act-ion/](https://apis.io/providers/act-ion/)** — or go straight to one of the APIs or properties below.
 
-- Website: https://www.act-ion.com/
-- About: https://www.act-ion.com/about
-- Technology: https://www.act-ion.com/technology
-- News: https://www.act-ion.com/news
-- Careers: https://www.act-ion.com/careers
-- Contact: inquiry@act-ion.com
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- `well-known/act-ion-well-known.yml` — discovery-path probe (recorded absence, no pointer emitted)
-- `security/act-ion-domain-security.yml` — TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe
-- `llms/act-ion-llms.txt` — generated llms.txt (by API Evangelist, not published by ACT-ion)
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Act Ion Domain Security](https://apis.io/security/act-ion/act-ion-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.act-ion.com/)
+- [Blog](https://www.act-ion.com/news)
+
+## API Evangelist rating
+
+**Kin Score 4.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.9** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/act-ion/](https://apis.io/providers/act-ion/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ACT-ion: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/act-ion/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
